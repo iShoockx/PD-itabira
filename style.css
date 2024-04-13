@@ -1,55 +1,58 @@
 
+/* Importação das fontes do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
+/* Resetando as bordas para zero em todos os elementos */
 *{
     border:solid 0px;
 }
 
+/* Estilos para o corpo da página */
 body { 
     font-family: "Josefin Sans",sans-serif;
     width: 100%;
     height: 100%;
-    background-color:#f3eee8;
+    background:#f3eee8;
     font-size: 18px;
     line-height: 26px;
     margin: 0;
-}
-.container{
-
-    background:#f3eee8;
     transition: background .5s;
 }
-.container.active{
-    background-color: black;
+
+/* Alteração do fundo do corpo da página quando o modo ativo é acionado */
+body.active{
+    background: rgb(32, 32, 32);
 }
 
-.barra-links{
+/* Estilos para a barra de navegação */
+.barralinks{
     color: white;
-    background-color: #492080;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   list-style-type: none;
-   width: 95%;
-   height: 100%;
-   border-bottom-color: #4E2096;
-   padding: 0 2.5rem;
-   margin-bottom: 1rem;
-   margin-top: 0;
+    background: #492080;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    width: 95%;
+    height: 100%;
+    border-bottom-color: #4E2096;
+    padding: 0 2.5rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    transition: background .5s;
 }
-.barra-links>li>a{
-    text-decoration: none;
-    color: white;
+
+/* Alteração do fundo da barra de navegação quando o modo ativo é acionado */
+.barralinks.active{
+    background: #1f0d3c;
+    border-bottom-color: rgb(24, 24, 24);
 }
-.barra-links.active{
-    background-color: ;
-}
+
+/* Estilos para o botão de alternância */
 .btn.active{
-    background: rgb(69, 69, 69);;
+    background: rgb(66, 66, 66);;
     border-color: black;
-    
 }
+
 .btn{
     width: 80px;
     height: 30px;
@@ -59,11 +62,14 @@ body {
     cursor: pointer;
     transition: color .5s;
 }
+
+/* Movimento do indicador do botão de alternância quando está ativo */
 .btn.active::before{
     left: 55px;
     background: black;
-    
 }
+
+/* Estilos para o indicador do botão de alternância */
 .btn::before{
     content: '';
     position: absolute;
@@ -76,6 +82,8 @@ body {
     transform: translateY(-50%);
     transition: left .5s;
 }
+
+/* Estilos para a seção "Quem somos" */
 .seçao1{
     display: flex;
     flex-direction: row;
@@ -87,19 +95,30 @@ body {
     transition: background 5s;
 }
 
+/* Estilos para o contêiner da seção "Quem somos" */
 .quem{
     margin: 0 1rem;
     display: inline-block;
     width: 800px;
-    background-color: #4E2096;
+    background: #4E2096;
     border-radius: 15px;
     padding: 2rem;
-    height: 100%;;
+    height: 100%;
+    transition: background .5s;
 }
+
+/* Estilos para o título da seção "Quem somos" */
 .quem>h2{
     font-size: 40px;
     text-align: center;
 }
+
+/* Alteração do fundo da seção "Quem somos" quando o modo ativo é acionado */
+.quem.active{
+    background: #3d1b6a;
+}
+
+/* Estilos para a imagem na seção "Quem somos" */
 .img1{
     width: 400px;
     height: 290px; 
@@ -107,6 +126,7 @@ body {
     align-items: flex-end;
 }
 
+/* Estilos para a seção "Cuidados" */
 .seçao2{
     display: flex;
     flex-direction: row;
@@ -116,42 +136,57 @@ body {
     background-color: #49A972;
     width: 100%;
 }
+
+/* Estilos para o contêiner da seção "Cuidados" */
 .Cuidados{
     display: inline-block;
     margin-left: 1rem;
     border-radius: 15px;
     background-color: #49A972;
 }
+
+/* Estilos para o título da seção "Cuidados" */
 .Cuidados>h2{
     text-align: center;
 }
 
-.seçao-cards{
+/* Estilos para os cards de curiosidades */
+.seçaocards{
     display: flex;
     justify-content: space-around;
     padding-bottom: 1rem;
     width: 100%;
 }
+
+/* Estilos para os cards individuais */
 .cards{
     display: inline-block;
     width: 300px;
-    background-color: white;
+    background: white;
     border-radius: 15px;
     margin: 1rem 1rem;
-    transition: background 5s;
-    
+    transition: background .5s;
 }
-.cards.active{
-    background: #151515;
-}
+
+/* Estilos para as imagens dentro dos cards */
 .imgbor{
     width: 300px;
     height: 225px;
 }
+
+/* Estilos para os títulos dentro dos cards */
 .cards>div>h2{
     text-align: center;
     color: #4E2096;
+    transition: color .5s;
 }
+
+/* Alteração da cor do título dentro dos cards quando o modo ativo é acionado */
+.cards>div>h2.active{
+    color: #49A972;
+}
+
+/* Estilos para o rodapé da página */
 footer{
     background-color: #151515;
     color: rgb(134, 133, 133);
@@ -159,48 +194,27 @@ footer{
     border-color: 151515;
     border-right: 2rem;
 }
+
+/* Estilos para o contêiner do rodapé */
 .rodapediv{
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     width: 100%;
 }
+
+/* Estilos para a imagem no rodapé */
 .imgrodape{
     height: 150px;
     padding: 1rem 0 ;
 }
+
+/* Estilos para o texto no rodapé */
 .text-rodape{
     padding-top: 1rem;
 }
+
+/* Estilos para a identificação no rodapé */
 .rodapeident{
     padding-top: 2rem;
-}
-
-@media(min-width:0) and (max-width: 992px){
-    .seçao-cards{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .barra-links>li>a{
-        display: none;
-    }
-    .seçao1{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .seçao2{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-right: 0px;
-    }
-    .quem{
-        width: 100%;
-    }
-    .img1{
-        text-align: center;
-    }
-
 }

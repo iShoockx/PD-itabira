@@ -1,3 +1,6 @@
+Claro, aqui está o seu código HTML comentado:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,176 +8,199 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Document</title>
+    <!-- Links para os arquivos CSS -->
     <link rel="stylesheet" href="Style.css">
-
+    <link rel="stylesheet" href="Media-Query.css">
 </head>
 
-
 <body>
-    
-        <header>
-            <nav>
-                <ul class="barra-links" id="seçao1">
-                    <li>
-                        <a href="#seçao1">Quem somos</a>
-                    </li>
-                    
-                    <li>
-                        <a href="#seçao2">Cuidados</a>
-                    </li>
-                    <li>
-                        <img src="Imagens/LOGOhtml.png" alt="Logo-da-empresa">
-                    </li>
-                    <li>
-                        <a href="#curiosidades">Curiosidades</a>
-                    </li>
-                    <li>
-                        <a href="#contatos">Contatos</a>
-                    </li>
-                    <li>
-                        <div class="btn"></div>
-                    </li>
+    <!-- Cabeçalho -->
+    <header>
+        <!-- Barra de navegação -->
+        <nav>
+            <ul class="barralinks" id="seçao1">
+                <!-- Links da barra de navegação -->
+                <li>
+                    <a href="#seçao1">Quem somos</a>
+                </li>
+                <li>
+                    <a href="#seçao2">Cuidados</a>
+                </li>
+                <li>
+                    <!-- Logo da empresa -->
+                    <img src="Imagens/LOGOhtml.png" alt="Logo-da-empresa">
+                </li>
+                <li>
+                    <a href="#curiosidades">Curiosidades</a>
+                </li>
+                <li>
+                    <a href="#contatos">Contatos</a>
+                </li>
+                <li>
+                    <!-- Botão de alternância -->
+                    <div class="btn"></div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <div class="seçao1">
+            <!-- Seção "Quem somos" -->
+            <div class="quem">
+                <h2>Quem somos</h2>
+                <h3>Olá Amantes de doguinhos!</h3>
+                <p> A criação deste site foi inspirada pelo amor gigante que sentimos pelo melhor amigo do ser humano.
+                    Aqui você encontrará dicas de cuidado e curiosidades do mundo animal.</p>
+            </div>
+            <!-- Imagem relacionada à seção "Quem somos" -->
+            <img src="Imagens/pexels-chevanon-photography-1108099.jpg" alt="Imagem-de-cachorro" class="img1">
+        </div>
+
+        <div class="seçao2" id="seçao2">
+            <!-- Seção "Cuidados" -->
+            <img src="Imagens/pexels-min-an-1635187.jpg" alt="Imagem-de-cachorro-2" style="width: 300px;">
+            <div class="Cuidados">
+                <h2>Cuidados</h2>
+                <ul>
+                    <!-- Lista de cuidados -->
+                    <li style="border-radius: 10px; border: 2px;">Evite dar restos de comida humana, pois podem ser
+                        prejudiciais à saúde dele.</li>
+                    <li>Dê banho no seu cão regularmente</li>
+                    <li>Fique atento a qualquer sinal de doença, como alterações no comportamento, perda de apetite ou
+                        vômitos.</li>
+                    <li>Socialize o seu cão com outros animais e pessoas</li>
                 </ul>
-                
-                    
-                
-                
-            </nav>
-        </header>
-        <main>
-            <div class="seçao1" >
-                <div class="quem">
-                    <h2>Quem somos</h2>
-                    <h3>Olá Amantes de doguinhos!</h3>
-                    <p> A criação deste site foi inspirada pelo amor gigante que sentimos pelo melhor amigo do ser humano.
-                        Aqui você encontrará dicas de cuidado e curiosidades do mundo animal.</p>
-                </div>
-                <img src="Imagens/pexels-chevanon-photography-1108099.jpg" alt="Imagem-de-cachorro" class="img1">
             </div>
-            
-            <div class="seçao2" id="seçao2">
-                <img src="Imagens/pexels-min-an-1635187.jpg" alt="Imagem-de-cachorro-2" style="width: 300px;">
-                <div class="Cuidados">
-                    <h2>Cuidados</h2>
-                    <ul>
-                        <li style="border-radius: 10px; border: 2px;">Evite dar restos de comida humana, pois podem ser
-                            prejudiciais à saúde dele.</li>
-                        <li>Dê banho no seu cão regularmente</li>
-                        <li>Fique atento a qualquer sinal de doença, como alterações no comportamento, perda de apetite ou
-                            vômitos.</li>
-                        <li>Socialize o seu cão com outros animais e pessoas</li>
-                    </ul>
+        </div>
+        <h1 style="text-align: center;color: #4E2096;">Curiosidades</h1>
+
+        <!-- Flexbox para os cards -->
+        <div class="seçaocards" id="curiosidades">
+            <!-- Cards de curiosidades -->
+            <div class="cards">
+                <div>
+                    <h2>Border collie</h2>
+                </div>
+                <div>
+                    <img src="Imagens/Border colie.jpeg" alt="Border colie" class="imgbor">
+                </div>
+                <div style="margin: 18px;">
+                    <p>O Border Collie, famoso por sua inteligência e agilidade, originou-se na região fronteiriça entre a Escócia e a Inglaterra, daí seu nome. Sua história remonta ao século XVI, com ancestrais que pastoreavam rebanhos ao lado de povos como os romanos e vikings.</p>
                 </div>
             </div>
-            <h1 style="text-align: center;color: #4E2096;">Curiosidades</h1>
-    
-            <!--Flexbox para os cards-->
-            <div class="seçao-cards" id="curiosidades">
-                <div class="cards">
-                    <div>
-                        <h2>Border collie</h2>
-                    </div>
-    
-                    <div>
-                        <img src="Imagens/Border colie.jpeg" alt="Border colie" class="imgbor">
-                    </div>
-    
-                    <div style="margin: 18px;">
-                        <p>O Border Collie, famoso por sua inteligência e agilidade, originou-se na região fronteiriça entre a Escócia e a Inglaterra, daí seu nome. Sua história remonta ao século XVI, com ancestrais que pastoreavam rebanhos ao lado de povos como os romanos e vikings.</p>
-                    </div>
+            <div class="cards" id="golden">
+                <div>
+                    <h2 style="text-align: center;">Golden Retriever</h2>
                 </div>
-                <div class="cards">
-                    <div>
-                        <h2 style="text-align: center;">Golden Retriever</h2>
-                    </div>
-                    <img src="Imagens/Golden.jpeg" alt="Golden Retriever" class="imgbor">
-                    <div style="margin: 18px;">
-                        <p>O Golden Retriever, com sua pelagem dourada e sorriso cativante, surgiu na Escócia do século XIX. Criado por Lord Tweedmouth, um caçador que buscava o cão de caça ideal, o Golden Retriever se destaca por sua inteligência, obediência, doçura e beleza.</p>
-                    </div>
-                </div>
-                <div class="cards">
-                    <div>
-                        <h2 style="text-align: center;">Vira Lata Caramelo</h2>
-                    </div>
-                    <div>
-                        <img src="Imagens/Caramelo.jpeg" alt="Vira-lata-Caramelo" class="imgbor">
-                    </div>
-                    <div style="margin: 18px;">
-                        <p>O cachorro vira-lata caramelo , como o próprio nome diz, é um cão sem raça definida que se popularizou por ser encontrado com facilidade pelo Brasil. Desta forma, é considerado pelas pessoas um patrimônio nacional. Em suma, sua pelagem curta, possui tamanhos variados, mesclas de tons marrons e predominância do preto no focinho, </p>
-                    </div>
+                <img src="Imagens/Golden.jpeg" alt="golden retriever" class="imgbor">
+                <div style="margin: 18px;">
+                    <p>O Golden Retriever, com sua pelagem dourada e sorriso cativante, surgiu na Escócia do século XIX. Criado por Lord Tweedmouth, um caçador que buscava o cão de caça ideal, o Golden Retriever se destaca por sua inteligência, obediência, doçura e beleza.</p>
                 </div>
             </div>
-            </div>
-            <!--Flexbox para os cards 2-->
-            <div class="seçao-cards">
-                <div class="cards">
-                    <div>
-                        <h2 style="text-align: center;">Lhasa apso</h2>
-                    </div>
-    
-                    <div >
-                        <img src="Imagens/Lhasa apso.jpeg" alt="Lhasa-apso" class="imgbor">
-                    </div>
-    
-                    <div style="margin: 18px;">
-                        <p>O Lhasa Apso, com sua pelagem longa e sedosa, é mais que um cãozinho charmoso: é um guardião milenar das montanhas do Himalaia. Reverenciado pelos monges tibetanos como "Cão-Leão Sentinela Ladrante", ele guarda segredos ancestrais e uma história rica.</p>
-                    </div>
+            <div class="cards" id="caramelo">
+                <div>
+                    <h2 style="text-align: center;">Vira Lata Caramelo</h2>
                 </div>
-                <div class="cards">
-                    <div>
-                        <h2 style="text-align: center;">Husky siberiano</h2>
-                    </div>
-                    <img src="Imagens/HUSKY.jpeg" alt="Border colie" class="imgbor">
-                    <div style="margin: 18px;">
-                        <p>O Husky Siberiano, com sua pelagem exuberante e olhos penetrantes, é mais do que um cão de aparência imponente: é um lobo domesticado que carrega no sangue a alma de um explorador. Originário da Sibéria, onde viveu ao lado do povo Chukchi há milhares de anos, ele guarda histórias de resistência, trabalho árduo e lealdade inabalável.</p>
-                    </div>
+                <div>
+                    <img src="Imagens/Caramelo.jpeg" alt="Vira-lata-Caramelo" class="imgbor">
                 </div>
-                <div class="cards">
-                    <div>
-                        <h2 style="text-align: center;">Pug</h2>
-                    </div>
-                    <div>
-                        <img src="Imagens/Lyly2.jpg" alt="Pug" class="imgbor">
-                    </div>
-                    <div style="margin: 18px;">
-                        <p>O Pug, com seu focinho achatado e olhar marcante, é mais do que um rostinho engraçado: é um companheiro carinhoso com uma história rica e surpreendente. Suas origens remontam à China antiga, onde conquistou o coração da nobreza e se tornou um símbolo de realeza.</p>
-                    </div>
+                <div style="margin: 18px;">
+                    <p>O cachorro vira-lata caramelo, como o próprio nome diz, é um cão sem raça definida que se popularizou por ser encontrado com facilidade pelo Brasil. Desta forma, é considerado pelas pessoas um patrimônio nacional. Em suma, sua pelagem curta, possui tamanhos variados, mesclas de tons marrons e predominância do preto no focinho.</p>
                 </div>
             </div>
-            </div>
-        </main>
-    
-        <footer>
-            <div class="rodapediv">
-                <img src="Imagens/FAMILY GUY.png" alt="Mini logo" class="imgrodape">
-                <div class="text-rodape">
-                    <ul>
-                        
-                        <li><a>Quem somos</a></li>
-                        <li><a>Cuidados</a></li>
-                        <li><a>Curiosidades</a></li>
-                        <li><a>Contatos</a></li>
-                    </ul>
+        </div>
+        </div>
+        <!-- Flexbox para os cards 2 -->
+        <div class="seçaocards">
+            <div class="cards" id="lhasa">
+                <div>
+                    <h2 style="text-align: center;">Lhasa apso</h2>
                 </div>
-                <div class="rodapeident" id="contatos">   
-                    <p>João Vitor Moreira Silva</p>
-                    <p>Pdita: 079</p>
+                <div>
+                    <img src="Imagens/Lhasa apso.jpeg" alt="Lhasa-apso" class="imgbor">
+                </div>
+                <div style="margin: 18px;">
+                    <p>O Lhasa Apso, com sua pelagem longa e sedosa, é mais que um cãozinho charmoso: é um guardião milenar das montanhas do Himalaia. Reverenciado pelos monges tibetanos como "Cão-Leão Sentinela Ladrante", ele guarda segredos ancestrais e uma história rica.</p>
                 </div>
             </div>
-    
-        </footer>
-    
-    
+            <div class="cards" id="husky">
+                <div>
+                    <h2 style="text-align: center;">Husky s
+
+iberiano</h2>
+                </div>
+                <img src="Imagens/HUSKY.jpeg" alt="Husky Siberiano" class="imgbor">
+                <div style="margin: 18px;">
+                    <p>O Husky Siberiano, com sua pelagem exuberante e olhos penetrantes, é mais do que um cão de aparência imponente: é um lobo domesticado que carrega no sangue a alma de um explorador. Originário da Sibéria, onde viveu ao lado do povo Chukchi há milhares de anos, ele guarda histórias de resistência, trabalho árduo e lealdade inabalável.</p>
+                </div>
+            </div>
+            <div class="cards" id="pug">
+                <div>
+                    <h2 style="text-align: center;">Pug</h2>
+                </div>
+                <div>
+                    <img src="Imagens/Lyly2.jpg" alt="Pug" class="imgbor">
+                </div>
+                <div style="margin: 18px;">
+                    <p>O Pug, com seu focinho achatado e olhar marcante, é mais do que um rostinho engraçado: é um companheiro carinhoso com uma história rica e surpreendente. Suas origens remontam à China antiga, onde conquistou o coração da nobreza e se tornou um símbolo de realeza.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="rodapediv">
+            <!-- Logo do rodapé -->
+            <img src="Imagens/FAMILY GUY.png" alt="Mini logo" class="imgrodape">
+            <div class="text-rodape">
+                <ul>
+                    <!-- Links do rodapé -->
+                    <li><a>Quem somos</a></li>
+                    <li><a>Cuidados</a></li>
+                    <li><a>Curiosidades</a></li>
+                    <li><a>Contatos</a></li>
+                </ul>
+            </div>
+            <!-- Informações de contato -->
+            <div class="rodapeident" id="contatos">   
+                <p>João Vitor Moreira Silva</p>
+                <p>Pdita: 079</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
+<!-- Script JavaScript -->
 <script >
     const btn = document.querySelector('.btn');
-    const container = document.querySelector('.container');
+    const barralinks = document.querySelector('.barralinks');
+    const body = document.querySelector('body');
+    const cards = document.querySelector('.cards');
+    const golden = document.querySelector('golden');
+    const husky = document.querySelector('husky');
+    const lhasa = document.querySelector('lhasa');
+    const pug = document.querySelector('pug');
+    const caramelo = document.querySelector('caramelo');
     
     btn.onclick = function(){
     this.classList.toggle('active')
-    container.classList.toggle('active')
-    
+    barralinks.classList.toggle('active')
+    body.classList.toggle('active')
+    cards.classList.toggle('active')
+    quem.classList.toggle('active')
+    golden.classList.toggle('active')
+    husky.classList.toggle('active')
+    lhasa.classList.toggle('active')
+    pug.classList.toggle('active')
+    caramelo.classList.toggle('active')
 
     }
 </script>
 </html>
+```
+
+Este comentário ajuda a entender a estrutura e a função de cada parte do seu código HTML.
